@@ -24,10 +24,12 @@ scanf("%d",&n);
 // printf("%d",ncr);
 
 for(int i=0;i<=n;i++){
+    for(int k=1;k<=n-i;k++)
+    printf(" ");
   for(int j=0;j<=i;j++){
   int ncr=combination(i,j);
 
-  printf("%d",ncr);
+  printf("%d ",ncr);
 
 
 }printf("\n");
@@ -43,5 +45,4 @@ return 0;
 
 
 
-
-}
+  }
