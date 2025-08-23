@@ -1,3 +1,4 @@
+// sum of all elemenyts of matrices?
 #include <stdio.h>
 int main()
 {
@@ -8,17 +9,16 @@ int main()
     printf("Enter number of colums =  ");
     scanf("%d", &y);
     int arr[x][y];
+    int sum = 0;
+
     for (int i = 0; i < x; i++)
     {
         for (int j = 0; j < y; j++)
         {
-            printf("Enter %d elements of %d row\n", j + 1, i + 1);
-            scanf("%d", &arr[i][j]);
+            printf("Enter %d elements of  row %d\n", j + 1, i + 1);
+            scanf("%d,", &arr[i][j]);
         }
     }
-
-    printf("Your 2D array is :-");
-    printf("\n");
 
     for (int i = 0; i < x; i++)
     {
@@ -28,6 +28,18 @@ int main()
         }
         printf("\n");
     }
+    printf("\n");
+    printf("Sum of all the elements = ");
+
+    for (int i = 0; i < x; i++)
+    {
+        for (int j = 0; j < y; j++)
+        {
+            sum = sum + arr[i][j];
+        }
+    }
+
+    printf("%d", sum);
 
     return 0;
 }
