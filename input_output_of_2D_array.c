@@ -15,6 +15,7 @@ int main()
             printf("Enter %d elements of %d row\n", j + 1, i + 1);
             scanf("%d", &arr[i][j]);
         }
+        printf("\n");
     }
 
     printf("Your 2D array is :-");
