@@ -21,6 +21,7 @@ int main()
             printf("Enter %d elements of  row %d\n", j + 1, i + 1);
             scanf("%d,", &arr[i][j]);
         }
+        printf("\n");
     }
     printf("entered matrix:-\n");
     for (int i = 0; i < x; i++)
