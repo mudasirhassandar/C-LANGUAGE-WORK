@@ -1,3 +1,5 @@
+// Store the transpose in another array and print?
+
 #include <stdio.h>
 int main()
 {
@@ -15,6 +17,7 @@ int main()
             printf("Enter %d elements of %d row\n", j + 1, i + 1);
             scanf("%d", &arr[i][j]);
         }
+        printf("\n");
     }
 
     printf("Your 2D array is :-");
@@ -25,6 +28,23 @@ int main()
         for (int j = 0; j < y; j++)
         {
             printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+    int brr[y][x];
+    for (int i = 0; i < y; i++)
+    {
+        for (int j = 0; j < x; j++)
+        {
+            brr[i][j] = arr[j][i];
+        }
+    }
+    printf("Transpose of the matrix:-\n");
+    for (int i = 0; i < y; i++)
+    {
+        for (int j = 0; j < x; j++)
+        {
+            printf("%d ", brr[i][j]);
         }
         printf("\n");
     }

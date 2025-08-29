@@ -1,3 +1,6 @@
+// WAP to print the transpose of the matrix .
+// Transpose-> change rows into columns and columns into rows.
+
 #include <stdio.h>
 int main()
 {
@@ -25,6 +28,15 @@ int main()
         for (int j = 0; j < y; j++)
         {
             printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Transpose of the matrix:-\n");
+    for (int i = 0; i < y; i++)
+    {
+        for (int j = 0; j < x; j++)
+        {
+            printf("%d ", arr[j][i]);
         }
         printf("\n");
     }
